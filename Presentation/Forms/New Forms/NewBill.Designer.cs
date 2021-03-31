@@ -255,7 +255,7 @@ namespace Presentation.Forms.New_Forms
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Yu Gothic UI", 10F);
-            this.label7.Location = new System.Drawing.Point(325, 31);
+            this.label7.Location = new System.Drawing.Point(324, 31);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(63, 19);
             this.label7.TabIndex = 5;
@@ -266,7 +266,7 @@ namespace Presentation.Forms.New_Forms
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Yu Gothic UI", 10F);
-            this.label5.Location = new System.Drawing.Point(325, 3);
+            this.label5.Location = new System.Drawing.Point(324, 3);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(46, 19);
             this.label5.TabIndex = 3;
@@ -278,7 +278,7 @@ namespace Presentation.Forms.New_Forms
             this.txtPhoneCustoBill.BackColor = System.Drawing.Color.White;
             this.txtPhoneCustoBill.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPhoneCustoBill.Font = new System.Drawing.Font("Yu Gothic UI", 9F);
-            this.txtPhoneCustoBill.Location = new System.Drawing.Point(394, 32);
+            this.txtPhoneCustoBill.Location = new System.Drawing.Point(393, 32);
             this.txtPhoneCustoBill.Name = "txtPhoneCustoBill";
             this.txtPhoneCustoBill.ReadOnly = true;
             this.txtPhoneCustoBill.Size = new System.Drawing.Size(150, 16);
@@ -290,7 +290,7 @@ namespace Presentation.Forms.New_Forms
             this.txtDateCustoBill.BackColor = System.Drawing.Color.White;
             this.txtDateCustoBill.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDateCustoBill.Font = new System.Drawing.Font("Yu Gothic UI", 9F);
-            this.txtDateCustoBill.Location = new System.Drawing.Point(394, 5);
+            this.txtDateCustoBill.Location = new System.Drawing.Point(393, 5);
             this.txtDateCustoBill.Name = "txtDateCustoBill";
             this.txtDateCustoBill.ReadOnly = true;
             this.txtDateCustoBill.Size = new System.Drawing.Size(150, 16);
@@ -349,7 +349,7 @@ namespace Presentation.Forms.New_Forms
             this.PanelDataBill.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70.15873F));
             this.PanelDataBill.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 12F));
             this.PanelDataBill.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 69F));
-            this.PanelDataBill.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 235F));
+            this.PanelDataBill.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 236F));
             this.PanelDataBill.Controls.Add(this.label3, 0, 1);
             this.PanelDataBill.Controls.Add(this.label4, 0, 0);
             this.PanelDataBill.Controls.Add(this.txtRucCustoBill, 1, 0);
