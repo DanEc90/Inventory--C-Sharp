@@ -1955,7 +1955,7 @@ namespace Presentation.Forms.New_Forms
             // 
             this.textBox1.Location = new System.Drawing.Point(45, 620);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(159, 20);
+            this.textBox1.Size = new System.Drawing.Size(45, 20);
             this.textBox1.TabIndex = 144;
             // 
             // NewBill
