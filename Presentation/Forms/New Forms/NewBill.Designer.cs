@@ -186,6 +186,10 @@ namespace Presentation.Forms.New_Forms
             this.EraseProd8 = new FontAwesome.Sharp.IconButton();
             this.EraseProd7 = new FontAwesome.Sharp.IconButton();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.BtnExitBill = new FontAwesome.Sharp.IconButton();
+            this.BtnsaveBill = new FontAwesome.Sharp.IconButton();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.PanelNameBill.SuspendLayout();
             this.PanelDataBill.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -255,7 +259,7 @@ namespace Presentation.Forms.New_Forms
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Yu Gothic UI", 10F);
-            this.label7.Location = new System.Drawing.Point(324, 31);
+            this.label7.Location = new System.Drawing.Point(322, 31);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(63, 19);
             this.label7.TabIndex = 5;
@@ -266,7 +270,7 @@ namespace Presentation.Forms.New_Forms
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Yu Gothic UI", 10F);
-            this.label5.Location = new System.Drawing.Point(324, 3);
+            this.label5.Location = new System.Drawing.Point(322, 3);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(46, 19);
             this.label5.TabIndex = 3;
@@ -278,7 +282,7 @@ namespace Presentation.Forms.New_Forms
             this.txtPhoneCustoBill.BackColor = System.Drawing.Color.White;
             this.txtPhoneCustoBill.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPhoneCustoBill.Font = new System.Drawing.Font("Yu Gothic UI", 9F);
-            this.txtPhoneCustoBill.Location = new System.Drawing.Point(393, 32);
+            this.txtPhoneCustoBill.Location = new System.Drawing.Point(391, 32);
             this.txtPhoneCustoBill.Name = "txtPhoneCustoBill";
             this.txtPhoneCustoBill.ReadOnly = true;
             this.txtPhoneCustoBill.Size = new System.Drawing.Size(150, 16);
@@ -290,7 +294,7 @@ namespace Presentation.Forms.New_Forms
             this.txtDateCustoBill.BackColor = System.Drawing.Color.White;
             this.txtDateCustoBill.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDateCustoBill.Font = new System.Drawing.Font("Yu Gothic UI", 9F);
-            this.txtDateCustoBill.Location = new System.Drawing.Point(393, 5);
+            this.txtDateCustoBill.Location = new System.Drawing.Point(391, 5);
             this.txtDateCustoBill.Name = "txtDateCustoBill";
             this.txtDateCustoBill.ReadOnly = true;
             this.txtDateCustoBill.Size = new System.Drawing.Size(150, 16);
@@ -302,7 +306,7 @@ namespace Presentation.Forms.New_Forms
             this.txtAddressCustoBill.BackColor = System.Drawing.Color.White;
             this.txtAddressCustoBill.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAddressCustoBill.Font = new System.Drawing.Font("Yu Gothic UI", 9F);
-            this.txtAddressCustoBill.Location = new System.Drawing.Point(95, 32);
+            this.txtAddressCustoBill.Location = new System.Drawing.Point(94, 32);
             this.txtAddressCustoBill.Name = "txtAddressCustoBill";
             this.txtAddressCustoBill.ReadOnly = true;
             this.txtAddressCustoBill.Size = new System.Drawing.Size(150, 16);
@@ -314,7 +318,7 @@ namespace Presentation.Forms.New_Forms
             this.txtRucCustoBill.BackColor = System.Drawing.Color.White;
             this.txtRucCustoBill.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtRucCustoBill.Font = new System.Drawing.Font("Yu Gothic UI", 9F);
-            this.txtRucCustoBill.Location = new System.Drawing.Point(95, 5);
+            this.txtRucCustoBill.Location = new System.Drawing.Point(94, 5);
             this.txtRucCustoBill.Name = "txtRucCustoBill";
             this.txtRucCustoBill.ReadOnly = true;
             this.txtRucCustoBill.Size = new System.Drawing.Size(150, 16);
@@ -349,7 +353,7 @@ namespace Presentation.Forms.New_Forms
             this.PanelDataBill.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70.15873F));
             this.PanelDataBill.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 12F));
             this.PanelDataBill.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 69F));
-            this.PanelDataBill.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 236F));
+            this.PanelDataBill.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 238F));
             this.PanelDataBill.Controls.Add(this.label3, 0, 1);
             this.PanelDataBill.Controls.Add(this.label4, 0, 0);
             this.PanelDataBill.Controls.Add(this.txtRucCustoBill, 1, 0);
@@ -1404,7 +1408,7 @@ namespace Presentation.Forms.New_Forms
             // 
             this.TxtSubtotBill.BackColor = System.Drawing.Color.White;
             this.TxtSubtotBill.Font = new System.Drawing.Font("Yu Gothic UI", 9F);
-            this.TxtSubtotBill.Location = new System.Drawing.Point(526, 1);
+            this.TxtSubtotBill.Location = new System.Drawing.Point(526, 2);
             this.TxtSubtotBill.Name = "TxtSubtotBill";
             this.TxtSubtotBill.ReadOnly = true;
             this.TxtSubtotBill.Size = new System.Drawing.Size(68, 23);
@@ -1958,12 +1962,69 @@ namespace Presentation.Forms.New_Forms
             this.textBox1.Size = new System.Drawing.Size(45, 20);
             this.textBox1.TabIndex = 144;
             // 
+            // BtnExitBill
+            // 
+            this.BtnExitBill.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
+            this.BtnExitBill.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnExitBill.Font = new System.Drawing.Font("Yu Gothic UI", 10F);
+            this.BtnExitBill.ForeColor = System.Drawing.Color.White;
+            this.BtnExitBill.IconChar = FontAwesome.Sharp.IconChar.SignOutAlt;
+            this.BtnExitBill.IconColor = System.Drawing.Color.White;
+            this.BtnExitBill.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnExitBill.IconSize = 22;
+            this.BtnExitBill.Location = new System.Drawing.Point(286, 638);
+            this.BtnExitBill.Name = "BtnExitBill";
+            this.BtnExitBill.Size = new System.Drawing.Size(100, 35);
+            this.BtnExitBill.TabIndex = 146;
+            this.BtnExitBill.Text = "Cancelar";
+            this.BtnExitBill.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnExitBill.UseVisualStyleBackColor = false;
+            // 
+            // BtnsaveBill
+            // 
+            this.BtnsaveBill.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
+            this.BtnsaveBill.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnsaveBill.Font = new System.Drawing.Font("Yu Gothic UI", 10F);
+            this.BtnsaveBill.ForeColor = System.Drawing.Color.White;
+            this.BtnsaveBill.IconChar = FontAwesome.Sharp.IconChar.Save;
+            this.BtnsaveBill.IconColor = System.Drawing.Color.White;
+            this.BtnsaveBill.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnsaveBill.IconSize = 22;
+            this.BtnsaveBill.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnsaveBill.Location = new System.Drawing.Point(144, 638);
+            this.BtnsaveBill.Name = "BtnsaveBill";
+            this.BtnsaveBill.Size = new System.Drawing.Size(100, 35);
+            this.BtnsaveBill.TabIndex = 145;
+            this.BtnsaveBill.Text = "Guardar";
+            this.BtnsaveBill.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnsaveBill.UseVisualStyleBackColor = false;
+            this.BtnsaveBill.Click += new System.EventHandler(this.BtnsaveBill_Click);
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(11, 656);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(110, 20);
+            this.textBox2.TabIndex = 147;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(141, 614);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 20);
+            this.textBox3.TabIndex = 148;
+            this.textBox3.Text = "Aqui";
+            // 
             // NewBill
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(627, 683);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.BtnExitBill);
+            this.Controls.Add(this.BtnsaveBill);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.EraseProd7);
             this.Controls.Add(this.EraseProd8);
@@ -2295,5 +2356,9 @@ namespace Presentation.Forms.New_Forms
         private FontAwesome.Sharp.IconButton EraseProd8;
         private FontAwesome.Sharp.IconButton EraseProd7;
         private System.Windows.Forms.TextBox textBox1;
+        private FontAwesome.Sharp.IconButton BtnExitBill;
+        private FontAwesome.Sharp.IconButton BtnsaveBill;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox3;
     }
 }

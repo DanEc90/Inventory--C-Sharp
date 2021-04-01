@@ -11,6 +11,22 @@ namespace Presentation.Forms.New_Forms
     {
         private readonly ProductsModel product = new ProductsModel();
         private int inscount;
+        readonly string[,] allprodbill = new string[15, 4];
+        private readonly bool act1 = false;
+        private bool act2 = false;
+        private bool act3 = false;
+        private bool act4 = false;
+        private bool act5 = false;
+        private bool act6 = false;
+        private bool act7 = false;
+        private bool act8 = false;
+        private bool act9 = false;
+        private bool act10 = false;
+        private bool act11 = false;
+        private bool act12 = false;
+        private bool act13 = false;
+        private bool act14 = false;
+        private bool act15 = false;
 
         public NewBill()
         {
@@ -578,11 +594,13 @@ namespace Presentation.Forms.New_Forms
                     {
                         TxtVU1ProdBill.Text = dataProd1Bill.CurrentRow.Cells[4].Value.ToString();
                     }
-                }                   
+                }                  
             }
             else
             {
                 MessageBox.Show("No existe el propducto");
+                TxtCod1ProdBill.Clear();
+                TxtCod1ProdBill.Focus();
             }                      
         }
 
@@ -616,6 +634,8 @@ namespace Presentation.Forms.New_Forms
             else
             {
                 MessageBox.Show("No existe el propducto");
+                TxtCod2ProdBill.Clear();
+                TxtCod2ProdBill.Focus();
             }
         }
 
@@ -649,6 +669,8 @@ namespace Presentation.Forms.New_Forms
             else
             {
                 MessageBox.Show("No existe el propducto");
+                TxtCod3ProdBill.Clear();
+                TxtCod3ProdBill.Focus();
             }
         }
 
@@ -682,6 +704,8 @@ namespace Presentation.Forms.New_Forms
             else
             {
                 MessageBox.Show("No existe el propducto");
+                TxtCod4ProdBill.Clear();
+                TxtCod4ProdBill.Focus();
             }
         }
 
@@ -715,6 +739,8 @@ namespace Presentation.Forms.New_Forms
             else
             {
                 MessageBox.Show("No existe el propducto");
+                TxtCod5ProdBill.Clear();
+                TxtCod5ProdBill.Focus();
             }
         }
 
@@ -748,6 +774,8 @@ namespace Presentation.Forms.New_Forms
             else
             {
                 MessageBox.Show("No existe el propducto");
+                TxtCod6ProdBill.Clear();
+                TxtCod6ProdBill.Focus();
             }
         }
 
@@ -781,6 +809,8 @@ namespace Presentation.Forms.New_Forms
             else
             {
                 MessageBox.Show("No existe el propducto");
+                TxtCod7ProdBill.Clear();
+                TxtCod7ProdBill.Focus();
             }
         }
 
@@ -814,6 +844,8 @@ namespace Presentation.Forms.New_Forms
             else
             {
                 MessageBox.Show("No existe el propducto");
+                TxtCod8ProdBill.Clear();
+                TxtCod8ProdBill.Focus();
             }
         }
 
@@ -847,6 +879,8 @@ namespace Presentation.Forms.New_Forms
             else
             {
                 MessageBox.Show("No existe el propducto");
+                TxtCod9ProdBill.Clear();
+                TxtCod9ProdBill.Focus();
             }
         }
 
@@ -880,6 +914,8 @@ namespace Presentation.Forms.New_Forms
             else
             {
                 MessageBox.Show("No existe el propducto");
+                TxtCod10ProdBill.Clear();
+                TxtCod10ProdBill.Focus();
             }
         }
 
@@ -913,6 +949,8 @@ namespace Presentation.Forms.New_Forms
             else
             {
                 MessageBox.Show("No existe el propducto");
+                TxtCod11ProdBill.Clear();
+                TxtCod11ProdBill.Focus();
             }
         }
 
@@ -946,6 +984,8 @@ namespace Presentation.Forms.New_Forms
             else
             {
                 MessageBox.Show("No existe el propducto");
+                TxtCod12ProdBill.Clear();
+                TxtCod12ProdBill.Focus();
             }
         }
 
@@ -979,6 +1019,8 @@ namespace Presentation.Forms.New_Forms
             else
             {
                 MessageBox.Show("No existe el propducto");
+                TxtCod13ProdBill.Clear();
+                TxtCod13ProdBill.Focus();
             }
         }
 
@@ -1012,6 +1054,8 @@ namespace Presentation.Forms.New_Forms
             else
             {
                 MessageBox.Show("No existe el propducto");
+                TxtCod14ProdBill.Clear();
+                TxtCod14ProdBill.Focus();
             }
         }
 
@@ -1028,7 +1072,7 @@ namespace Presentation.Forms.New_Forms
                 textBox1.Text = inscount.ToString();
                 if (TxtPrecioBill.SelectedIndex.Equals(-1))
                 {
-                    //MessageBox.Show("Selecciones el tipo de venta");
+                    //MessageBox.Show("Selecciones el tipo de venta");                    
                 }
                 else
                 {
@@ -1045,6 +1089,8 @@ namespace Presentation.Forms.New_Forms
             else
             {
                 MessageBox.Show("No existe el propducto");
+                TxtCod15ProdBill.Clear();
+                TxtCod15ProdBill.Focus();
             }
         }
 
@@ -1703,6 +1749,10 @@ namespace Presentation.Forms.New_Forms
                 TxtIvaBill.Refresh();
                 TxtIvaBill.Text = Math.Round(float.Parse(TxtSubtotBill.Text) * 0.12, 2).ToString();
             }
+            else
+            {
+                TxtIvaBill.Text = "";
+            }
         }
 
         //Cuando cambia el valor iva, suma el total de la factura //**************************************************************
@@ -1712,6 +1762,10 @@ namespace Presentation.Forms.New_Forms
             {
                 TxtTotBill.Refresh();
                 TxtTotBill.Text = Math.Round((float.Parse(TxtSubtotBill.Text) + float.Parse(TxtIvaBill.Text)), 2).ToString();
+            }
+            else
+            {
+                TxtTotBill.Text = "";
             }
         }
 
@@ -2209,6 +2263,11 @@ namespace Presentation.Forms.New_Forms
             EraseProd15.Visible = false;
             inscount--;
             textBox1.Text = inscount.ToString();
+        }
+
+        private void BtnsaveBill_Click(object sender, EventArgs e)
+        {
+            if ()
         }
     }
 }
